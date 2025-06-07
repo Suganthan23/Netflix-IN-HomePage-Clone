@@ -1,0 +1,1412 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.hero {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    border-bottom: solid 4px #e50914;
+}
+
+.hero__background-wrapper {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 0;
+}
+
+.hero__background {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+
+}
+
+.hero__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.75);
+    z-index: 1;
+}
+
+.navbar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background: transparent;
+    position: absolute;
+    top: 0;
+    z-index: 2;
+}
+
+.navbar img {
+    width: 150px;
+    height: 80px;
+    margin-left: 146px;
+    padding-top: 3px;
+}
+
+.navbar__signin-button {
+    background-color: #e50914;
+    color: white;
+    border: solid 1px #e50914;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 80px;
+    height: 33px;
+    margin-left: -230px;
+    padding: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    padding-top: 6px;
+}
+
+.hero__content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -35%);
+    text-align: center;
+    color: white;
+    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+    z-index: 2;
+}
+
+.hero__content h1 {
+    font-size: 56px;
+    font-weight: 800;
+    margin-bottom: 15px;
+}
+
+.hero__content h2 {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.hero__content p {
+    font-size: 16px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-weight: 400;
+}
+
+.email1 {
+    width: 350px;
+    height: 55px;
+    background-color: transparent;
+    border: solid 0.5px grey;
+    border-radius: 5px;
+    text-align: left;
+    padding-left: 15px;
+    font-size: 17px;
+    font-weight: 500;
+    margin-right: 5px;
+}
+
+.get-started1 {
+    vertical-align: top;
+    width: 215px;
+    height: 57px;
+    background-color: #e50914;
+    color: white;
+    border: solid 1px #e50914;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 24px;
+    font-weight: 600;
+    padding: 10px;
+    text-align: left;
+    padding-left: 25px;
+}
+
+.trending__container {
+    padding: 20px;
+    max-width: 1200px;
+    background-color: black;
+    color: white;
+    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+    padding-left: 146px;
+    padding-top: 30px;
+    position: relative;
+}
+
+.trending__card {
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    padding: 20px;
+    margin-left: 15px;
+    text-align: left;
+    cursor: pointer;
+}
+
+.card img:hover {
+    transform: scale(1.05);
+    transition: linear 0.20s;
+}
+
+.card img {
+    width: 175px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+    position: relative;
+}
+
+.card1 h1 {
+    position: absolute;
+    display: flex;
+    left: 14%;
+    font-size: 111px;
+    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+    color: black;
+    bottom: 40px;
+    -webkit-text-stroke: white 2px;
+}
+
+.card2 h1,
+.card3 h1,
+.card4 h1 {
+    position: absolute;
+    font-size: 111px;
+    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+    color: black;
+    bottom: 40px;
+    -webkit-text-stroke: white 2px;
+}
+
+.join__container {
+    max-width: 1200px;
+    height: 400px;
+    background-color: black;
+    color: white;
+    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+    padding-top: 30px;
+    padding-left: 146px;
+    position: relative;
+}
+
+.joincard {
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    height: 250px;
+    gap: 20px;
+    padding: 20px;
+    text-align: left;
+    border-radius: 5px;
+}
+
+.jcard1,
+.jcard2,
+.jcard3,
+.jcard4 {
+    border-radius: 20px;
+    width: 175px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+    gap: 10px;
+    text-align: left;
+}
+
+.jcard1,
+.jcard3 {
+    background-color: #1D1A33;
+    border: 3px solid #210E18;
+}
+
+.jcard2,
+.jcard4 {
+    background-color: #210E18;
+    border: 3px solid #1D1A33;
+}
+
+.jcard1 i,
+.jcard3 i {
+    color: #e50914;
+    opacity: 0.6;
+    display: flex;
+    align-self: flex-end;
+    font-size: 44px;
+}
+
+.jcard2 i,
+.jcard4 i {
+    color: #e50914;
+    opacity: 0.6;
+    display: flex;
+    align-self: flex-end;
+    font-size: 44px;
+}
+
+.jcard1 i {
+    padding-top: 30px;
+}
+
+.jcard2 i {
+    padding-top: 40px;
+}
+
+.jcard3 i {
+    padding-top: 50px;
+}
+
+.jcard4 i {
+    padding-top: 10px;
+}
+
+.faq {
+    max-width: 1200px;
+    background-color: black;
+    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+    color: white;
+    padding-left: 146px;
+    padding-top: 20px;
+}
+
+.faq__container {
+    max-width: 925px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.faq__item {
+    width: 925px;
+    height: 50px;
+    background-color: #2d2d2d;
+    color: white;
+    padding: 20px;
+    gap: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.faq__item h3 {
+    font-size: 24px;
+    font-weight: 450;
+}
+
+.faq__item:hover {
+    background-color: #414141;
+}
+
+.rtw {
+    max-width: 1200px;
+    padding: 50px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+}
+
+.rtw p {
+    font-size: 16px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-weight: 400;
+}
+
+.email2 {
+    width: 525px;
+    height: 55px;
+    background-color: #0F0F0F;
+    border: solid 0.5px grey;
+    border-radius: 5px;
+    text-align: left;
+    padding-left: 15px;
+    font-size: 17px;
+    font-weight: 500;
+    margin-right: 5px;
+}
+
+.get-started2 {
+    vertical-align: top;
+    width: 215px;
+    height: 58px;
+    background-color: #e50914;
+    color: white;
+    border: solid 1px #e50914;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 24px;
+    font-weight: 600;
+    padding: 10px;
+    text-align: left;
+    padding-left: 25px;
+}
+
+.footer {
+    background-color: black;
+    color: white;
+    padding: 40px 150px;
+    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+    font-size: 16px;
+    height: 300px;
+}
+
+.footer__contact {
+    margin-bottom: 50px;
+    color: white;
+}
+
+.footer__contact a {
+    text-decoration: underline;
+    color: white;
+}
+
+.footer__grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+.footer__grid ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer__grid li {
+    margin-bottom: 16px;
+    color: white;
+    font-size: 14px;
+}
+
+.footer h4 {
+    margin-top: 40px;
+    font-weight: 400;
+}
+
+/* Responsive Design */
+
+@media (max-width: 1200px) {
+
+    .navbar {
+        position: relative;
+    }
+
+    .navbar img {
+        margin-left: 75px;
+        width: 140px;
+        height: 90px;
+    }
+
+    .navbar__signin-button {
+        position: absolute;
+        right: 75px;
+        bottom: 50px;
+    }
+
+    .hero__content h1 {
+        font-size: 44px;
+        width: 600px;
+    }
+
+    .hero__content p {
+        width: 500px;
+        text-align: center;
+        justify-content: center;
+        font-size: 17px;
+        padding-left: 40px;
+    }
+
+    .hero__form {
+        max-width: 1200px;
+        height: 50px;
+        align-items: center;
+        display: flex;
+    }
+
+    .email1 {
+        margin-left: 40px;
+        width: 300px;
+        height: 50px;
+    }
+
+    .get-started1 {
+        max-width: 175px;
+        height: 53px;
+        padding: 10px;
+        padding-left: 15px;
+        font-size: larger;
+        text-align: center;
+    }
+
+    .card h1 {
+        display: none;
+    }
+
+    .trending__container,
+    .faq,
+    .footer {
+        padding-left: 80px;
+        padding-right: 20px;
+    }
+
+    .trending__container {
+        max-width: 1200px;
+        gap: 10px;
+        position: relative;
+        padding-top: 40px;
+    }
+
+    .trending__card {
+        border-radius: 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 20px;
+        text-align: left;
+        cursor: pointer;
+    }
+
+    .card img {
+        width: 200px;
+        height: 275px;
+        object-fit: cover;
+        border-radius: 10px;
+        position: relative;
+        margin-left: 0px;
+    }
+
+
+    .join__container {
+        padding-left: 80px;
+        max-width: 1200px;
+        height: 450px;
+        box-sizing: border-box;
+    }
+
+    .joincard {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: space-between;
+        margin-right: 20px;
+    }
+
+    .jcard1,
+    .jcard2,
+    .jcard3,
+    .jcard4 {
+        width: 48%;
+        height: 100px;
+        height: 160px;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 0;
+        text-align: left;
+        font-size: 14px;
+        box-sizing: border-box;
+    }
+
+    .jcard1 p,
+    .jcard2 p,
+    .jcard3 p,
+    .jcard4 p {
+        font-size: larger;
+    }
+
+    .jcard1 i {
+        position: relative;
+        bottom: 20px;
+    }
+
+    .jcard2 i {
+        position: relative;
+        bottom: 10px;
+    }
+
+    .jcard3 i {
+        position: relative;
+        bottom: 40px;
+    }
+
+    .jcard4 i {
+        position: relative;
+        bottom: 0px;
+    }
+
+    .jcard1 i,
+    .jcard2 i,
+    .jcard3 i,
+    .jcard4 i {
+        font-size: 32px;
+    }
+
+    .faq__item {
+        width: 1020px;
+        height: 25px;
+    }
+
+    .faq__item h3 {
+        font-size: 20px;
+    }
+
+    .email2 {
+        width: 380px;
+        height: 45px;
+    }
+
+    .get-started2 {
+        max-width: 135px;
+        height: 47px;
+        font-weight: 600;
+        font-size: medium;
+        padding: 10px;
+        justify-content: left;
+        padding-left: 15px;
+        margin-top: 10px;
+        position: relative;
+        bottom: 10px;
+    }
+}
+
+@media (max-width: 1100px) {
+
+    .navbar {
+        position: relative;
+    }
+
+    .navbar img {
+        margin-left: 75px;
+        width: 140px;
+        height: 90px;
+    }
+
+    .navbar__signin-button {
+        position: absolute;
+        right: 45px;
+        bottom: 35px;
+    }
+
+    .hero__content h1 {
+        font-size: 32px;
+        width: 500px;
+    }
+
+    .hero__form {
+        max-width: 400px;
+        height: 50px;
+        align-items: center;
+    }
+
+    .email1 {
+        margin-left: 40px;
+        width: 400px;
+        height: 45px;
+    }
+
+    .get-started1 {
+        max-width: 160px;
+        height: 45px;
+        margin-left: 100px;
+        margin-top: 10px;
+        padding: 10px;
+        padding-left: 15px;
+        font-size: larger;
+    }
+
+    .card h1 {
+        display: none;
+    }
+
+    .trending__container,
+    .faq,
+    .footer {
+        padding-left: 30px;
+        padding-right: 20px;
+    }
+
+    .trending__container {
+        max-width: 1100px;
+        gap: 10px;
+        position: relative;
+        padding-top: 40px;
+    }
+
+    .trending__card {
+        border-radius: 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 20px;
+        text-align: left;
+        cursor: pointer;
+    }
+
+    .card img {
+        width: 170px;
+        height: 230px;
+        object-fit: cover;
+        border-radius: 10px;
+        position: relative;
+        margin-left: 0px;
+    }
+
+    .join__container {
+        width: 100%;
+        max-width: 1100px;
+        height: 450px;
+        padding-left: 30px;
+        box-sizing: border-box;
+    }
+
+    .joincard {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: space-between;
+        margin-right: 20px;
+    }
+
+    .jcard1,
+    .jcard2,
+    .jcard3,
+    .jcard4 {
+        width: 48%;
+        height: 100px;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 0;
+        text-align: left;
+        font-size: 14px;
+        box-sizing: border-box;
+    }
+
+    .jcard1 p,
+    .jcard2 p,
+    .jcard3 p,
+    .jcard4 p {
+        font-size: larger;
+    }
+
+    .jcard1 i,
+    .jcard4 i {
+        position: relative;
+        bottom: 20px;
+    }
+
+    .jcard2 i {
+        position: relative;
+        bottom: 25px;
+    }
+
+    .jcard3 i {
+        position: relative;
+        bottom: 40px;
+    }
+
+    .jcard1 i,
+    .jcard2 i,
+    .jcard3 i,
+    .jcard4 i {
+        font-size: 34px;
+    }
+
+    .faq {
+        max-width: 1100px;
+    }
+
+    .faq__item {
+        max-width: 1050px;
+        height: 25px;
+    }
+
+    .faq__item h3 {
+        font-size: 20px;
+    }
+
+    .email2 {
+        width: 380px;
+        height: 45px;
+    }
+
+    .get-started2 {
+        max-width: 135px;
+        height: 48px;
+        font-weight: 600;
+        font-size: medium;
+        padding: 10px;
+        justify-content: left;
+        padding-left: 15px;
+        margin-top: 10px;
+        position: relative;
+        bottom: 10px;
+    }
+}
+
+@media (max-width: 1000px) {
+
+    .navbar {
+        position: relative;
+    }
+
+    .navbar img {
+        margin-left: 75px;
+        width: 140px;
+        height: 90px;
+    }
+
+    .navbar__signin-button {
+        position: absolute;
+        right: 45px;
+        bottom: 35px;
+    }
+
+    .hero__content h1 {
+        font-size: 32px;
+        width: 500px;
+    }
+
+    .hero__form {
+        max-width: 400px;
+        height: 50px;
+        align-items: center;
+    }
+
+    .email1 {
+        margin-left: 40px;
+        width: 400px;
+        height: 45px;
+    }
+
+    .get-started1 {
+        max-width: 160px;
+        height: 45px;
+        margin-left: 100px;
+        margin-top: 10px;
+        padding: 10px;
+        padding-left: 15px;
+        font-size: larger;
+    }
+
+    .card h1 {
+        display: none;
+    }
+
+    .trending__container,
+    .faq,
+    .footer {
+        padding-left: 30px;
+        padding-right: 20px;
+    }
+
+    .trending__container {
+        max-width: 1000px;
+        gap: 10px;
+        position: relative;
+        padding-top: 40px;
+    }
+
+    .trending__card {
+        border-radius: 20px;
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        text-align: left;
+        cursor: pointer;
+        padding-left: 0px;
+        padding-left: 40px;
+    }
+
+    .card img {
+        width: 170px;
+        height: 230px;
+        object-fit: cover;
+        border-radius: 10px;
+        position: relative;
+        margin-left: 0px;
+    }
+
+    .join__container {
+        width: 100%;
+        max-width: 1000px;
+        height: 800px;
+        gap: 10px;
+        position: relative;
+        padding-left: 30px;
+        margin: 0px;
+        box-sizing: border-box;
+    }
+
+
+    .joincard {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding-left: 0px;
+        position: relative;
+    }
+
+    .jcard1,
+    .jcard2,
+    .jcard3,
+    .jcard4 {
+        width: 100%;
+        max-width: 1000px;
+        min-height: 150px;
+        border-radius: 20px;
+        height: 100px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 0;
+        text-align: left;
+        font-size: 14px;
+        box-sizing: border-box;
+    }
+
+
+    .jcard1 p,
+    .jcard2 p,
+    .jcard3 p,
+    .jcard4 p {
+        font-size: larger;
+    }
+
+    .jcard1 i {
+        position: relative;
+        bottom: 0px;
+        font-size: 28px;
+    }
+
+    .jcard2 i {
+        position: relative;
+        bottom: 10px;
+        font-size: 30px;
+    }
+
+    .jcard3 i {
+        position: relative;
+        bottom: 20px;
+        font-size: 32px;
+    }
+
+    .jcard4 i {
+        font-size: 30px;
+    }
+
+    .faq__item {
+        max-width: 880px;
+        height: 25px;
+    }
+
+    .faq__item h3 {
+        font-size: 20px;
+    }
+
+    .email2 {
+        width: 380px;
+        height: 45px;
+    }
+
+    .get-started2 {
+        max-width: 135px;
+        height: 48px;
+        font-weight: 600;
+        font-size: medium;
+        padding: 10px;
+        justify-content: left;
+        padding-left: 15px;
+        margin-top: 10px;
+        position: relative;
+        bottom: 10px;
+    }
+}
+
+@media (max-width: 900px) {
+
+    .navbar {
+        position: relative;
+    }
+
+    .navbar img {
+        margin-left: 35px;
+        margin-top: 10px;
+        width: 90px;
+        height: 50px;
+    }
+
+    .navbar__signin-button {
+        position: absolute;
+        right: 25px;
+        bottom: 15px;
+    }
+
+    .hero__content h1 {
+        font-size: 32px;
+        width: 500px;
+    }
+
+    .hero__form {
+        max-width: 400px;
+        height: 50px;
+        align-items: center;
+    }
+
+    .email1 {
+        margin-left: 40px;
+        width: 400px;
+        height: 45px;
+    }
+
+    .get-started1 {
+        max-width: 160px;
+        height: 45px;
+        margin-left: 100px;
+        margin-top: 10px;
+        padding: 10px;
+        padding-left: 15px;
+    }
+
+    .card h1 {
+        display: none;
+    }
+
+    .trending__container,
+    .faq,
+    .footer {
+        font-size: smaller;
+        padding-left: 30px;
+        padding-right: 20px;
+    }
+
+    .trending__container {
+        max-width: 900px;
+        gap: 10px;
+        position: relative;
+        padding-top: 40px;
+    }
+
+    .trending__container h2 {
+        font-size: x-large;
+    }
+
+    .trending__card {
+        border-radius: 20px;
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        text-align: left;
+        cursor: pointer;
+        padding-left: 0px;
+    }
+
+    .card img {
+        width: 160px;
+        height: 220px;
+        object-fit: cover;
+        border-radius: 10px;
+        position: relative;
+        margin-left: 0px;
+    }
+
+    .join__container {
+        max-width: 900px;
+        height: 700px;
+    }
+
+
+    .joincard {
+        max-width: 900px;
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding-left: 0px;
+        position: relative;
+    }
+
+    .jcard1,
+    .jcard2,
+    .jcard3 {
+        max-width: 750px;
+        border-radius: 20px;
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 0;
+        text-align: left;
+        font-size: 14px;
+        box-sizing: border-box;
+    }
+
+    .jcard4 {
+        max-width: 750px;
+        border-radius: 20px;
+        min-height: 150px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 0;
+        text-align: left;
+        font-size: 14px;
+        box-sizing: border-box;
+        padding-bottom: 20px;
+    }
+
+    .jcard1 p,
+    .jcard2 p,
+    .jcard3 p,
+    .jcard4 p {
+        font-size: larger;
+    }
+
+
+    .jcard1 i {
+        position: relative;
+        bottom: 20px;
+        font-size: 28px;
+    }
+
+    .jcard2 i {
+        position: relative;
+        bottom: 30px;
+        font-size: 30px;
+    }
+
+    .jcard3 i {
+        position: relative;
+        bottom: 40px;
+        font-size: 32px;
+    }
+
+    .jcard4 i {
+        font-size: 30px;
+    }
+
+    .faq__item {
+        max-width: 700px;
+        height: 25px;
+    }
+
+    .faq__item h3 {
+        font-size: 20px;
+    }
+
+    .rtw {
+        padding: 10px;
+        padding-top: 20px;
+    }
+
+    .rtw__form {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        padding-bottom: 0px;
+    }
+
+    .email2 {
+        width: 380px;
+        height: 45px;
+        vertical-align: top;
+    }
+
+    .get-started2 {
+        max-width: 135px;
+        height: 48px;
+        font-weight: 600;
+        font-size: medium;
+        padding: 10px;
+        justify-content: left;
+        padding-left: 15px;
+        position: relative;
+        bottom: 10px;
+    }
+
+    .footer {
+        padding-top: 30px;
+        font-size: larger;
+    }
+}
+
+@media (max-width: 800px) {
+    .hero__content h1 {
+        font-size: 36px;
+        width: 550px;
+    }
+
+    .hero__form {
+        max-width: 450px;
+        height: 50px;
+    }
+
+    .email1 {
+        width: 450px;
+        height: 45px;
+    }
+
+    .get-started1 {
+        font-size: 12px;
+        max-width: 160px;
+        height: 45px;
+    }
+
+    .card img {
+        width: 150px;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 10px;
+        position: relative;
+        margin-left: 0px;
+    }
+
+    .join__container {
+        max-width: 800px;
+        height: 775px;
+    }
+
+    .joincard {
+        max-width: 800px;
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding-left: 0px;
+        position: relative;
+    }
+
+    .jcard1,
+    .jcard2,
+    .jcard3,
+    .jcard4 {
+        border-radius: 20px;
+        width: 700px;
+        min-height: 150px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: left;
+        padding: 15px 15px;
+    }
+
+    .jcard1 i,
+    .jcard2 i,
+    .jcard3 i,
+    .jcard4 i {
+        font-size: 32px;
+    }
+
+    .jcard1 i {
+        position: relative;
+        bottom: 0;
+    }
+
+    .jcard4 i {
+        position: relative;
+        bottom: 10px;
+    }
+
+    .jcard2 i {
+        position: relative;
+        bottom: 20px;
+    }
+
+    .jcard3 i {
+        position: relative;
+        bottom: 30px;
+    }
+
+    .faq__item {
+        max-width: 666px;
+    }
+
+    .faq__item h3 {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .navbar {
+        position: relative;
+    }
+
+    .navbar img {
+        margin-left: 35px;
+        margin-top: 10px;
+        width: 90px;
+        height: 50px;
+    }
+
+    .navbar__signin-button {
+        position: absolute;
+        right: 25px;
+        bottom: 15px;
+    }
+
+    .hero__content h1 {
+        font-size: 32px;
+        width: 500px;
+    }
+
+    .hero__form {
+        max-width: 400px;
+        height: 50px;
+        align-items: center;
+    }
+
+    .email1 {
+        margin-left: 40px;
+        width: 400px;
+        height: 45px;
+    }
+
+    .get-started1 {
+        max-width: 160px;
+        height: 45px;
+        margin-left: 100px;
+        margin-top: 10px;
+        font-weight: 600;
+        font-size: smaller;
+        padding: 10px;
+        padding-left: 15px;
+    }
+
+    .card h1 {
+        display: none;
+    }
+
+    .trending__container,
+    .join__container,
+    .faq,
+    .footer {
+        font-size: smaller;
+        padding-left: 30px;
+        padding-right: 20px;
+    }
+
+    .trending__container {
+        max-width: 400px;
+    }
+
+    .trending__container {
+        max-width: 600px;
+        gap: 10px;
+        position: relative;
+        padding-top: 40px;
+    }
+
+    .trending__card {
+        border-radius: 20px;
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        text-align: left;
+        cursor: pointer;
+    }
+
+    .card img {
+        width: 111px;
+        height: 160px;
+        object-fit: cover;
+        border-radius: 10px;
+        position: relative;
+        margin-left: 0px;
+    }
+
+    .card4 {
+        display: none;
+    }
+
+
+    .join__container {
+        max-width: 600px;
+        height: 700px;
+    }
+
+    .joincard {
+        max-width: 600px;
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding-left: 0px;
+        position: relative;
+    }
+
+    .jcard1,
+    .jcard2,
+    .jcard3,
+    .jcard4 {
+        border-radius: 20px;
+        width: 390px;
+        height: 100px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 0px;
+        text-align: left;
+        font-size: 14px;
+    }
+
+    .jcard1 i {
+        position: relative;
+        bottom: 20px;
+        font-size: 28px;
+    }
+
+    .jcard2 i {
+        position: relative;
+        bottom: 30px;
+        font-size: 30px;
+    }
+
+    .jcard3 i {
+        position: relative;
+        bottom: 40px;
+        font-size: 32px;
+    }
+
+    .jcard4 i {
+        font-size: 30px;
+    }
+
+    .faq__item {
+        max-width: 400px;
+        height: 25px;
+    }
+
+    .faq__item h3 {
+        font-size: 20px;
+    }
+
+    .email2 {
+        width: 380px;
+        height: 45px;
+    }
+
+    .get-started2 {
+        max-width: 135px;
+        height: 45px;
+        font-weight: 600;
+        font-size: medium;
+        padding: 10px;
+        justify-content: left;
+        padding-left: 15px;
+        margin-top: 10px;
+    }
+}
